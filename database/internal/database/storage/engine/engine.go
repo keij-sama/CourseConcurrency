@@ -35,7 +35,7 @@ func (e *InMemoryEngine) Set(key, value string) error {
 	return nil
 }
 
-// Получение значения по ключу
+// Get получает значение по ключу
 func (e *InMemoryEngine) Get(key string) (string, error) {
 	value, exists := e.data[key]
 	if !exists {
