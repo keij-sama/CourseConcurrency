@@ -19,14 +19,14 @@ func TestParse(t *testing.T) {
 		},
 		{
 			name:    "GET command",
-			input:   "GET key value",
+			input:   "GET key",
 			comType: CommandGet,
 			args:    []string{"key"},
 			err:     false,
 		},
 		{
 			name:    "DEL command",
-			input:   "DEL key value",
+			input:   "DEL key",
 			comType: CommandDel,
 			args:    []string{"key"},
 			err:     false,
