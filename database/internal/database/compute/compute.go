@@ -13,7 +13,7 @@ type Compute interface {
 	Process(input string) (string, error)
 }
 
-// Ревализация для обработчика запросов
+// Реализация для обработчика запросов
 type SimpleCompute struct {
 	parser  parser.Parser
 	storage storage.Storage
