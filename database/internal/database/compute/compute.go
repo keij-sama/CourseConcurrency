@@ -73,6 +73,6 @@ func (c *SimpleCompute) Process(input string) (string, error) {
 		return "OK", nil
 
 	default:
-		return "", fmt.Errorf("неизвестная команда: %s", cmd.Type)
+		return "", fmt.Errorf("unknown command: %s", cmd.Type)
 	}
 }
